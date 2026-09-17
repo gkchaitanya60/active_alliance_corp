@@ -1,0 +1,10 @@
+WARM PERSPECTIVE — SEPTEMBER 17, 2026
+
+34 HTML pages including 23 individual job pages. Content is adapted from the official Active Alliance website; no invented awards or client statistics. The Astir family roles retain the hiring-company details supplied by the official listing.
+
+Verified at desktop 1440px, tablet 768px and mobile 390px: local images and links, no page overflow or JavaScript errors. Checked live hero motion, pause, reduced-motion setting, persistent header, desktop/mobile menus, carousel buttons/keyboard/swipe, job search and location filtering.
+
+The contact form prepares an email draft. For online submissions, use the linked existing official form. Website deployment and a new form-submission backend are not included.
+
+HEADER AND HERO UPDATE
+Header logo displays at 75% of its previous width. Navigation and the Services dropdown have been refined across all pages. The homepage uses subtle animated highlights registered to the architectural edges and warm reflected light within the opening. Lighting shares the photograph’s crop and zoom so it stays aligned at all screen sizes. The motion control pauses lighting and background motion; reduced-motion preferences are respected.
