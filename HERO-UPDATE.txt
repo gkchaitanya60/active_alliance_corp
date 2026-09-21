@@ -1,0 +1,10 @@
+ACTIVE ALLIANCE — MOVING PERSPECTIVES
+
+Extract the complete ZIP, then open index.html in a browser.
+Keep the assets folder beside the HTML files.
+
+The homepage hero now includes five photographic panels, automatic depth transitions, a moving light trail, previous/next controls, and direct image selection. Pause motion stops the panels, trail and background. System reduced-motion preferences are respected; manual controls remain available.
+
+All inner pages and existing navigation are retained from your uploaded version. The new hero requires no installation, external JavaScript library or internet connection.
+
+Footer update: matched the navigation background across all pages and adjusted footer text contrast.

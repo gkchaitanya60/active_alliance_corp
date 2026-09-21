@@ -1,0 +1,49 @@
+/* Moving Perspectives — isolated homepage hero treatment. */
+.home-hero.moving-perspectives{height:660px;background:#10252c;color:#fcf5ec;--gradient:linear-gradient(112deg,#a47d8e,#8a9d88)}
+.moving-perspectives .hero-art{inset:0;z-index:-2;animation:perspectiveBackground 26s ease-in-out infinite alternate;transform-origin:65% 50%}
+.moving-perspectives .hero-art>img{width:100%;height:100%;object-fit:cover;object-position:center 54%}
+.moving-perspectives .hero-art:after{background:linear-gradient(90deg,rgba(8,26,33,.93) 0%,rgba(8,26,33,.81) 28%,rgba(8,26,33,.48) 46%,rgba(8,26,33,.08) 73%),linear-gradient(0deg,rgba(8,24,31,.84),transparent 43%)}
+.moving-perspectives .hero-content{padding-top:124px;z-index:2;pointer-events:none}
+.moving-perspectives .hero-content a{pointer-events:auto}
+.moving-perspectives .hero-content .eyebrow{color:#d8dedb;font-size:9px;letter-spacing:.2em;margin-bottom:27px}
+.moving-perspectives .hero-content h1{color:#fff8f0;max-width:570px;font-size:clamp(48px,4.65vw,69px);font-weight:500;line-height:1.08;letter-spacing:-.06em}
+.moving-perspectives .hero-content h1 em{color:#e9c5bb;letter-spacing:-.055em;white-space:nowrap}
+.moving-perspectives .hero-content>p:not(.eyebrow){color:#d1d9d7;font-size:16px;line-height:1.75;max-width:425px;margin-top:29px}
+.moving-perspectives .hero-actions{gap:24px;margin-top:33px;align-items:center}
+.moving-perspectives .hero-actions .button{font-size:12px;padding:12px 21px;gap:18px}
+.moving-perspectives .hero-actions .text-link{color:#f5eae0;font-size:12px;font-weight:400;gap:9px}
+.moving-perspectives .hero-actions .ring{--ring-bg:transparent;background:none;border:none;font-size:19px;width:21px;height:27px}
+.moving-perspectives .hero-bottom{z-index:3;bottom:23px;align-items:center;pointer-events:none}
+.moving-perspectives .hero-bottom button{pointer-events:auto}
+.moving-perspectives .hero-bottom>.micro{background:transparent;border:0;padding:0;color:#d8c7c2;font-size:8px;line-height:1.8;letter-spacing:.22em}
+.moving-perspectives .hero-bottom>p:nth-child(2){font-family:Inter,Arial,sans-serif;color:#b4c4c1;font-size:11px;letter-spacing:.04em}
+.moving-perspectives .motion-toggle{background:#122b3199;color:#efe8df;border-color:#d9ccc050;padding:7px 13px}
+.perspectives-scene{position:absolute;right:0;top:22px;bottom:62px;width:61%;z-index:1;touch-action:pan-y}
+.perspectives-stage{width:900px;height:600px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--scene-scale, .9));transform-origin:center;}
+.perspectives-panels{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 42%}
+.perspective-panel{position:absolute;top:39px;left:325px;width:250px;height:440px;border:1px solid #e8d8c3;background:#112d36;box-shadow:8px 15px 24px #020f174a,0 0 0 1px #d9c2a222;overflow:hidden;backface-visibility:hidden;will-change:transform;transform-origin:50% 50%;}
+.perspective-panel svg{width:100%;height:100%;max-width:none;display:block}
+.perspective-panel:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,#fff5db19,transparent 22%,transparent 75%,#091c2530);box-shadow:inset 0 0 0 1px #f8e6c630}
+/* Useful static layout while JavaScript loads, or if it is disabled. */
+.perspective-panel:nth-child(1){transform:translate3d(-310px,24px,-158px) rotateY(28deg) scale(.75);z-index:1}
+.perspective-panel:nth-child(2){transform:translate3d(-177px,12px,-33px) rotateY(14deg) scale(.875);z-index:3}
+.perspective-panel:nth-child(3){transform:translate3d(0,0,92px) rotateY(-7deg);z-index:5}
+.perspective-panel:nth-child(4){transform:translate3d(177px,12px,-33px) rotateY(-23deg) scale(.875);z-index:3}
+.perspective-panel:nth-child(5){transform:translate3d(310px,24px,-158px) rotateY(-37deg) scale(.75);z-index:1}
+.perspectives-orbit{position:absolute;inset:0;width:900px;height:600px;max-width:none;pointer-events:none}
+.perspectives-controls{position:absolute;bottom:0;left:50%;transform:translateX(-50%);display:flex;gap:13px;align-items:center;z-index:10}
+.perspectives-controls>button{width:31px;height:31px;border:1px solid #d0d3c436;border-radius:50%;background:#102b3266;color:#f0e9df;line-height:1;padding:0;font-size:15px;transition:background .2s}
+.perspectives-controls>button:hover{background:#a47d8e88}
+.perspectives-dots{display:flex;gap:2px;align-items:center}
+.perspectives-dots button{background:none;border:0;padding:10px 7px;min-width:24px;min-height:30px;position:relative}
+.perspectives-dots button:after{content:'';display:block;width:4px;height:4px;border-radius:4px;background:#d5ddcf66;transition:background .2s,width .2s}
+.perspectives-dots button[aria-pressed=true]:after{width:17px;background:#dfc2b6}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes perspectiveBackground{from{transform:scale(1)}to{transform:scale(1.04)}}
+@media(min-width:1700px){.moving-perspectives .hero-content{padding-top:112px}.perspectives-scene{right:max(0px,calc((100vw - 1650px)/2));width:960px}.moving-perspectives .hero-content h1{font-size:72px}}
+@media(max-width:1200px) and (min-width:901px){.moving-perspectives .hero-content{padding-top:139px}.moving-perspectives .hero-content h1{font-size:49px}.moving-perspectives .hero-content>p:not(.eyebrow){max-width:345px;font-size:15px}.moving-perspectives .hero-content .desktop-only{display:none}.moving-perspectives .hero-actions{flex-direction:column;align-items:flex-start;gap:18px;margin-top:24px}.perspectives-scene{width:61%;right:-1%;top:50px;bottom:83px}.moving-perspectives .hero-content .eyebrow{font-size:8px}}
+@media(max-width:900px){.home-hero.moving-perspectives{height:1030px}.moving-perspectives .hero-content{padding-top:48px}.moving-perspectives .hero-content h1{font-size:clamp(45px,7.4vw,64px);max-width:650px}.moving-perspectives .hero-content>p:not(.eyebrow){font-size:16px;max-width:450px;margin-top:22px}.moving-perspectives .hero-actions{margin-top:25px}.moving-perspectives .hero-content .eyebrow{margin-bottom:20px}.perspectives-scene{top:405px;bottom:74px;right:0;width:100%}.moving-perspectives .hero-art:after{background:linear-gradient(180deg,#0b2129eb 0%,#0b2129d9 28%,#0b212952 62%,#0b2129c7 100%)}.moving-perspectives .hero-bottom>p:nth-child(2){display:none}.moving-perspectives .hero-bottom>.micro{font-size:8px}.moving-perspectives .hero-bottom{bottom:20px}.perspectives-controls{bottom:0}}
+@media(max-width:600px){.home-hero.moving-perspectives{height:770px}.moving-perspectives .hero-content{padding-top:37px}.moving-perspectives .hero-content h1{font-size:clamp(37px,8.8vw,51px);line-height:1.11}.moving-perspectives .hero-content .eyebrow{font-size:7px;letter-spacing:.13em;margin-bottom:21px}.moving-perspectives .hero-content>p:not(.eyebrow){font-size:14px;line-height:1.75;margin-top:21px;max-width:340px}.moving-perspectives .hero-actions{gap:17px;flex-wrap:wrap;margin-top:23px}.moving-perspectives .hero-actions .button{font-size:11px;padding:10px 15px;gap:13px}.moving-perspectives .hero-actions .text-link{font-size:10px;gap:4px}.perspectives-scene{top:315px;bottom:87px}.moving-perspectives .hero-bottom>.micro{font-size:6px;max-width:170px}.moving-perspectives .hero-bottom{bottom:24px}.moving-perspectives .motion-toggle{font-size:9px}.moving-perspectives .hero-art>img{object-position:61% center}.perspectives-controls{bottom:4px}}
+@media(max-width:380px){.home-hero.moving-perspectives{height:770px}.moving-perspectives .hero-content h1{font-size:36px}.moving-perspectives .hero-actions{gap:14px}.moving-perspectives .hero-actions .text-link{font-size:10px}.perspectives-scene{top:338px;bottom:88px}.moving-perspectives .hero-bottom>.micro{max-width:145px}}
+@media(prefers-reduced-motion:reduce){.moving-perspectives .hero-art{animation:none;transform:none}.perspective-panel{will-change:auto}}
+@media(max-width:380px){.home .home-paths article{grid-template-columns:100px minmax(0,1fr);gap:18px}.home .home-paths h3{font-size:25px;overflow-wrap:break-word}.home .home-paths .text-link{font-size:11px;gap:7px}}
