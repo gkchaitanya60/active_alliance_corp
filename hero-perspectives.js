@@ -3,7 +3,7 @@
 const hero=document.querySelector('.moving-perspectives');if(!hero)return;
 const scene=hero.querySelector('.perspectives-scene'),stage=hero.querySelector('.perspectives-stage'),panels=[...hero.querySelectorAll('.perspective-panel')],dots=[...hero.querySelectorAll('[data-perspective]')],lights=[...hero.querySelectorAll('.orbit-dots>g')],status=hero.querySelector('.perspective-status'),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 let current=2,from=2,target=2,transitionStart=0,transitionDuration=2.2,transitioning=false,elapsed=0,hold=0,last=0,raf=0,inView=true;
-const labels=['Architecture','Application development','Teamwork','Enterprise technology','New possibilities'];
+const labels=['Architecture','Teamwork','Enterprise infrastructure','Business applications','New possibilities'];
 function resize(){const scale=Math.min(scene.clientWidth/900,(scene.clientHeight-30)/600,1.08);stage.style.setProperty('--scene-scale',scale.toFixed(4));}
 resize();new ResizeObserver(resize).observe(scene);
 const wrap=n=>((n+2.5)%5+5)%5-2.5;

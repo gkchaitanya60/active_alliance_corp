@@ -8,3 +8,5 @@ The homepage hero now includes five photographic panels, automatic depth transit
 All inner pages and existing navigation are retained from your uploaded version. The new hero requires no installation, external JavaScript library or internet connection.
 
 Footer update: matched the navigation background across all pages and adjusted footer text contrast.
+
+Imagery update: technology, digital infrastructure, software, offices and architecture now lead across the site. Seven people-focused photos remain among 37 content and carousel images. Each photo selection is used once. The hero starts with enterprise infrastructure; the animation, layout and cream footer are retained.
